@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background: #2c302e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header-nav{
+    float: right;
+}
+.logo{
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+}
+.logo-item{
+    color: #fff;
+}
+.header-nav-list{
+   display: inline-block;
+}
+.header-nav-list-item{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+    color: #fff;
+}
