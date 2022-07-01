@@ -1,8 +1,9 @@
 @import "normaliza.css";
 @import "header.css";
+@import "inicio.css";
 
 p{
-    color: aqua;
+    color: #000;
 }
 
 header{
@@ -10,7 +11,7 @@ header{
 }
 
 nav{
-    padding: 10px;
+    padding: 23px;
 }
 
 body{
@@ -25,14 +26,27 @@ html {
     scroll-behavior: smooth;
 }
 .pagina-inicial{
-    background-color: #537A5A;
+    background-color: #6C706C;
 }
 .pagina-contato{
-    background-color: #9AE19D;
+    background-color: #75737B;
 }
 .single-page{
     display: inline-block;
     width: 100%;
     height: 900px;
     padding-top: 100px;
+}
+
+ul a{
+    display: block;
+    padding: 0 2m;
+    line-height: 2.2em;
+    text-decoration: none;
+    color:#fff;
+}
+
+ul a:hover {
+    color: #000;
+    background: #537A5A;
 }

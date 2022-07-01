@@ -1,28 +1,40 @@
 .header{
     width: 100%;
     height: 100px;
-    background: #2c302e;
+    background: rgba(44,48,46,0.6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    translate: 2;
+    border-bottom-style: inset;    
+    border-color: #878C87;
 }
 .header-nav{
     float: right;
 }
+
 .logo{
     display: inline-block;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ms Madi', cursive;
 }
 .logo-item{
     color: #fff;
+    font-size: 50px;
 }
 .header-nav-list{
    display: inline-block;
+
 }
 .header-nav-list-item{
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
     color: #fff;
+}
+
+.pagina-inicial{
+    background-image: url("../assets/fundo.jpeg");
+    background-repeat: repeat ;
+
 }
