@@ -59,3 +59,13 @@
 .descricao{
     font-size: 35px;
 }
+
+@media screen and (max-width: 900px) {
+    .pagina-inicial{
+        background: rgb(198, 151, 75);  
+    } 
+    .foto{
+        width:200px;
+        height: 200px;
+    }
+}

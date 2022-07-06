@@ -17,6 +17,7 @@ nav{
 body{
     font-family: 'Lato', sans-serif;
     background-color: #474a48;
+    overflow-x: hidden;
 }
 .container{
     margin: 0 auto;
@@ -24,6 +25,7 @@ body{
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 .pagina-inicial{
     background-color: #6C706C;
@@ -34,7 +36,7 @@ html {
 }
 .single-page{
     display: inline-block;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 100px);
     padding-top: 100px;
 }
@@ -52,7 +54,7 @@ ul a:hover {
     border-color: #FFF;
 }
 
-.display-flex-gisele{
+.display-flex{
     display: flex;
 }
 
@@ -71,4 +73,10 @@ ul a:hover {
 }
 .black{
     color: #000;
+}
+
+@media screen and (max-width: 900px) {
+    .display-flex{
+        display: inline-block;
+    }
 }
