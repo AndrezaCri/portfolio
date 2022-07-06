@@ -1,17 +1,16 @@
 .header{
     width: 100%;
     height: 100px;
-    background: rgba(44,48,46,0.6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     translate: 2;
-    border-bottom-style: inset;    
-    border-color: #878C87;
 }
 .header-nav{
     float: right;
+    margin:0;
+    padding: 0;
 }
 
 .logo{
@@ -19,9 +18,11 @@
     font-family: 'Ms Madi', cursive;
 }
 .logo-item{
-    color: #fff;
-    font-size: 50px;
+    color: rgb(198, 151, 75);
+    font-size: 35px;
+    text-decoration: none;
 }
+
 .header-nav-list{
    display: inline-block;
 
@@ -30,11 +31,13 @@
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
-    color: #fff;
+    color: #000000;
+    border-bottom: 5px solid #000;
+    margin: 0 10px;
 }
-
-.pagina-inicial{
-    background-image: url("../assets/fundo.jpeg");
-    background-repeat: repeat ;
-
+.header-nav-list-item:hover{
+    background-color: green;
+}
+.header-nav-list-item:focus{
+    background-color: blue;
 }
