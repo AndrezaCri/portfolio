@@ -9,6 +9,7 @@
     translate: 2;
     border-bottom-style: inset;    
     border-color: #878C87;
+    opacity: 0.7;
 }
 .header-nav{
     float: right;
@@ -19,8 +20,10 @@
     font-family: 'Ms Madi', cursive;
 }
 .logo-item{
-    color: #fff;
-    font-size: 50px;
+    color: #000;
+    font-size: 55px;
+    text-decoration: none;
+
 }
 .header-nav-list{
    display: inline-block;
@@ -30,11 +33,12 @@
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
-    color: #fff;
+    color: #000;
 }
 
 .pagina-inicial{
     background-image: url("../assets/fundo.jpeg");
-    background-repeat: repeat ;
+    background-repeat: repeat;
 
 }
+

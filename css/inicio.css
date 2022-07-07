@@ -2,15 +2,17 @@
     width: 350px;
     height: 350px;
     border-radius: 100%;
-    background-image: url("../assets/andreza.jpg");
+    background-image: url("../assets/andreza.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 186%;
+    background-size: 100%;
     display: inline-block;
     border-style: solid;
-    border-color: black;
+    border-color: #878C87;
     border-width:6px ;
     vertical-align: middle;
+   
+
 
 }
 
@@ -18,13 +20,17 @@
     display: inline-block;
     width: 450px;
     padding-left: 20px;
+    
 }
 
 .conteudo p{
     font-size: 20px;
     display: inline-block;
     width: 100%;
+    animation: mymove 8s 1;
+    color: #000;
 }
+
 
 .botao{
     font-size: 20px;
@@ -32,7 +38,7 @@
     padding: 15px 30px;
     display: inline-block;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
@@ -44,4 +50,7 @@
     vertical-align: middle;
 }
 
-
+@keyframes mymove {
+    50% {font-weight: bold;}
+    50% {margin: 50px;}
+}

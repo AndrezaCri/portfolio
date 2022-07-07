@@ -1,0 +1,12 @@
+.pagina-contato{
+    display: inline-block;
+    width: 450px;
+    padding-left: 20px;
+    background-image: url("../assets/fundo1.jpeg");
+    background-repeat: repeat;
+    background-color: #14213d;
+    background-position: center;
+    background-size: 186%;
+
+}
+

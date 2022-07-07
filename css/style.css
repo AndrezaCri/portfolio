@@ -1,18 +1,8 @@
 @import "normaliza.css";
 @import "header.css";
 @import "inicio.css";
-
-p{
-    color: #000;
-}
-
-header{
-    padding: auto;
-}
-
-nav{
-    padding: 23px;
-}
+@import "contato.css";
+/*@import "footer.css";*/
 
 body{
     font-family: 'Lato', sans-serif;
@@ -25,12 +15,7 @@ body{
 html {
     scroll-behavior: smooth;
 }
-.pagina-inicial{
-    background-color: #6C706C;
-}
-.pagina-contato{
-    background-color: #75737B;
-}
+
 .single-page{
     display: inline-block;
     width: 100%;
@@ -43,10 +28,14 @@ ul a{
     padding: 0 2m;
     line-height: 2.2em;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+
 }
 
 ul a:hover {
     color: #000;
-    background: #537A5A;
+    width: auto;
 }
