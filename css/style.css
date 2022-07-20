@@ -7,19 +7,29 @@
 body{
     font-family: 'Lato', sans-serif;
     background-color: #474a48;
+    overflow-x: hidden;
 }
 .container{
     margin: 0 auto;
-    width: 1024px;
+    width: 95%;
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
-
+.pagina-inicial{
+    background-color: #6C706C;
+}
+.pagina-contato{
+    background: rgb(21, 21, 40);
+    background: linear-gradient(90deg, rgb(21, 21, 40) 38%, rgb(160, 134, 94) 38%);  
+}
 .single-page{
+    display: inline-block;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 100px);
     padding-top: 100px;
+    width: 100vw;
 }
 
 ul a{
@@ -27,14 +37,37 @@ ul a{
     padding: 0 2m;
     line-height: 2.2em;
     text-decoration: none;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 30px;
-
+    color:#000;
 }
 
 ul a:hover {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.flex-align{
+    align-items: center;
+}
+.black{
     color: #000;
-    width: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .display-flex{
+        display: inline-block;
+    }
 }

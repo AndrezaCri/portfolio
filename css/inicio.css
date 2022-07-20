@@ -7,24 +7,16 @@
     background-position: center;
     background-size: 100%;
     display: inline-block;
-    border-style: solid;
-    border-color: #878C87;
-    border-width:6px ;
     vertical-align: middle;
-   
-
-
+    border:6px solid rgb(198, 151, 75);    
 }
 
 .conteudo{
-    display: inline-block;
     width: 450px;
-    padding-left: 20px;
-    
+    padding-left: 50px;
 }
 
 .conteudo p{
-    font-size: 20px;
     display: inline-block;
     width: 100%;
     animation: mymove 8s 1;
@@ -33,6 +25,8 @@
 
 
 .botao{
+    display: inline-block;
+    max-width: 150px;
     font-size: 20px;
     border: 1px solid #000;
     padding: 15px 30px;
@@ -42,7 +36,6 @@
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-
 }
 
 .botao .material-symbols-outlined{
@@ -50,7 +43,31 @@
     vertical-align: middle;
 }
 
-@keyframes mymove {
-    50% {font-weight: bold;}
-    50% {margin: 50px;}
+.pagina-inicial{
+    background: rgb(16,16,36);
+    background: linear-gradient(90deg, rgb(16, 16, 16) 38%, rgb(198, 151, 75) 38%);  
+}
+.subtitulo,
+.titulo{
+    margin:0;
+    padding: 0;
+}
+
+.subtitulo{
+    padding-top:10px;
+    font-size: 40px;
+}
+
+.descricao{
+    font-size: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    .pagina-inicial{
+        background: rgb(198, 151, 75);  
+    } 
+    .foto{
+        width:200px;
+        height: 200px;
+    }
 }

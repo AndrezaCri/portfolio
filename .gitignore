@@ -5,26 +5,13 @@
 /tmp
 /out-tsc
 
-/login/config/config.yaml
-
-.history/*
 
 /login/node_modules
 
 # dependencies
 /node_modules
 
-.history/
-
 # IDEs and editors
-/.idea
-.project
-.classpath
-.history/
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
@@ -42,8 +29,11 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+.history/
+
+.history
+.history/
 
 # System Files
 .DS_Store
 Thumbs.db
-.history

@@ -1,18 +1,16 @@
 .header{
     width: 100%;
     height: 100px;
-    background: rgba(44,48,46,0.6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     translate: 2;
-    border-bottom-style: inset;    
-    border-color: #878C87;
-    opacity: 0.7;
 }
 .header-nav{
     float: right;
+    margin:0;
+    padding: 0;
 }
 
 .logo{
@@ -20,11 +18,11 @@
     font-family: 'Ms Madi', cursive;
 }
 .logo-item{
-    color: #000;
-    font-size: 55px;
+    color: rgb(198, 151, 75);
+    font-size: 35px;
     text-decoration: none;
-
 }
+
 .header-nav-list{
    display: inline-block;
 
@@ -42,3 +40,20 @@
 
 }
 
+
+.header-nav-list-item:focus{
+    background-color: #fff;
+}
+.header-nav .material-symbols-outlined{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .header-nav-list{
+        display: none;
+    }
+    .header-nav .material-symbols-outlined{
+        display: block;
+        font-size: 74px;
+    }
+
+}
