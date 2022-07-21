@@ -1,5 +1,60 @@
-@import "normaliza.css";
+@import "normalize.css";
 
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(1,0,13);
+    background: linear-gradient(90deg, rgba(1,0,13,1) 40%, rgba(198,151,75,1) 1%);
+    font-family: 'Lato', sans-serif;
+}
+@font-face{ 
+	font-family: 'Lato';
+	src: url('../assets/font/lato/lato-lightitalic-webfont.eot');
+	src: url('../assets/font/lato/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../assets/font/lato/lato-lightitalic-webfont.woff') format('woff'),
+	     url('../assets/font/lato/lato-lightitalic-webfont.ttf') format('truetype'),
+	     url('../assets/font/lato/lato-lightitalic-webfont.svg#lato-regular') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Ms Madi';
+	src: url('../assets/font/ms-madi/msmadi-regular-webfont.eot');
+	src: url('../assets/font/ms-madi/msmadi-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../assets/font/ms-madi/msmadi-regular-webfont.woff') format('woff'),
+	     url('../assets/font/ms-madi/msmadi-regular-webfont.ttf') format('truetype'),
+	     url('../assets/font/ms-madi/msmadi-regular-webfont.svg#lato-regular') format('svg');
+}
+
+.display-flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-align{
+    align-items: center;
+}
+.position-relative{
+    position: relative;
+}
+.single-page{
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.single-page.pagina-inicial{
+    justify-content: left;
+}
 .header{
     width: 100%;
     z-index: 100;
@@ -8,60 +63,51 @@
     display: block;
     padding: 0 20px 0 20px ;
     box-sizing: border-box;
-}
-
-.single-page{
-    height: 100vh;
-    padding-top: 100px;
-}
-
-.material-symbols-outlined{
-    font-size: 14px;
-}
-
-body{
+    font-family: 'Lato', sans-serif;
     background: rgb(1,0,13);
     background: linear-gradient(90deg, rgba(1,0,13,1) 40%, rgba(198,151,75,1) 1%);
-    
 }
-
-.logo{
-    font-family: 'Ms Madi', cursive;
-    float: left;
-}
-
-.logo-item{
-    color: rgba(198,151,75,1);
-    font-size: 20px;
-    text-decoration: none;
-
-}
-
 .header-nav{
     float: right;
 }
-
 .header-nav-list{
     display: inline-block;
 }
-
 .header-nav-list-item{
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
 }
-
+.header-nav-mobile{
+    display: none;
+}
+.logo{
+    font-family: 'Ms Madi', cursive;
+    margin-left: -145px;
+    position: absolute;
+    left: 40%;
+}
+.logo span{
+    color: #000;
+}
+.logo-item{
+    color: rgba(198,151,75,1);
+    font-size: 37px;
+    text-decoration: none;
+}
 ul a{
     line-height: 2.2em;
     color: #000;
     font-size: 20px;
 }
-
 ul a:hover {
     color: #000;
     width: auto;
 }
 
+.material-symbols-outlined{
+    font-size: 14px;
+}
 .foto  {
     width: 240px;
     height: 240px;
@@ -88,18 +134,13 @@ ul a:hover {
     font-family: 'Lato', sans-serif;
     margin-left: 10px;
     padding-top: auto;
-
 }
-
 .titulo{
     font-size: 1em;
 }
-
 .subtitulo{
     margin-top: -6px;
-
 }
-
 .botao{
     font-size: 14px;
     border: 1px solid #000;
@@ -111,53 +152,110 @@ ul a:hover {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: auto;
-
 }
-
+.botao span{
+    vertical-align: middle;
+}
 .conteudo p{
     font-size: 25px;
     display: inline-block;
     width: 100%;
     color: #000;
     margin-top: auto;
-
 }
-
-.display-flex{
-    display: flex;
-}
-
-.justify-content{
+.container-page{
+    display:flex;
+    width: 60%;
+    overflow: hidden;
+    margin-left: 40%;
     justify-content: center;
-}
-.flex-row{
-    flex-direction: row;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-.flex-align{
     align-items: center;
 }
+.habilidades{
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.habilidades li{
+    display: flex;
+    flex: 100%;
+    border-radius: 10px;
+    background-color: #FFF;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 7px;
+    padding-bottom: 40px;
 
-.position-relative{
+}
+.habilidades p{
+    display: inline-block;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 20px;    
+    margin: 24px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.page-titulo{
+    font-size: 39px;
+    color: rgba(198,151,75,1);
+    position: absolute;
+    left: 18%;
+}
+.material-symbols-outlined.habilidades-linguagem{
+    font-size: 50px;
+    color: rgba(198,151,75,1);
+}
+.bar-progress{
+    display: inline-block;
+    height: 8px;
+    border-radius: 10px;
     position: relative;
+    background-color: rgba(198,151,75,1);
+    width: 90%;
+    margin: 0 10px;
 }
-
-.pagina-contato {
-    padding-left: 20px;
-    background-position: center;
-    background-size: 186%;
+.bar-progress span{
+    background-color: #000;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 2px 3px;
+    font-size: 11px;
+    position: absolute;
+    top: -5px;
 }
-
-.pagina-projetos{
-    padding-left: 20px;
-    background-position: center;
-    background-size: 186%;
+.bar-progress::after{
+    content: '100%';
+    position: absolute;
+    right: 0;
+    top: 12px;
+    font-size: 10px;
 }
-
-.p .habilidades{
-    font-style: ;
- 
+.bar-progress::before{
+    content: '0';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 10px;
+}
+.conteudo-contato p{
+    font-size: 30px;
+}
+.conteudo-contato p a{
+    color: #1a110e;
+}
+@media (max-width: 1024px){
+    .header,
+    body{
+        background-color: rgba(198,151,75,1);
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-nav-mobile{
+        display: block;
+    }
 }

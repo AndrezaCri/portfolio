@@ -8,76 +8,123 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@1,300&family=Ms+Madi&family=Source+Code+Pro&display=swap" rel="stylesheet">        </head>
+    </head>
         
     <body>
         <header class="header">
             <div class="container">
                 <h1 class="logo">
-                    <a class="logo-item" href="">Andreza Cristina</a>
+                    <a class="logo-item" href="">&lt;Andreza&gt; <span>&lt;/Cristina&gt;</span></a>
                 </h1>
                 <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li class="header-nav-list-item"><a href="#ancora1">Início</a></li>
-                        <li class="header-nav-list-item"><a href="#ancora2">Projetos</a></li>
-                        <li class="header-nav-list-item"><a href="#ancora3">Contato</a></li>
-
+                        <li class="header-nav-list-item"><a href="#inicio">Início</a></li>
+                        <li class="header-nav-list-item"><a href="#habilidades">Habilidades</a></li>
+                        <li class="header-nav-list-item"><a href="#contato">Contato</a></li>
                     </ul>
+                </nav>
+                <nav class="header-nav-mobile">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
                 </nav>
            </div>
         </header>
-        <div class="single-page display-flex flex-align pagina-inicial"  id="ancora1"> 
+        <div class="single-page pagina-inicial"  id="inicio"> 
             <!-- inicio conteudo -->
             <div class="display-flex justify-content flex-align position-relative wrap-content">
                 <div class="foto display-flex"></div>
                 <div class="conteudo display-flex flex-column ">
                     <h2 class="titulo">
                         Desenvolvedora Web    
-                    </h2>
+                    </h2>                    
                     
-                    <h2 class="subtitulo">Andreza Cristina</h2>
                     <p class="descricao">
-                        Desenvolvo projetos Web focada em garantir usabilidade, acessibilidade, performance, e funcionamento cross browser, entregando a interface sempre o mais próximo possível do guide da marca, garantindo qualidade técnica e boa experiencia para o usuário final.            
-                    </p>
-                    <a class="botao" href="assets/curriculo.pdf" target="_blank">
-                        <span class="material-symbols-outlined">
-                        picture_as_pdf
-                        </span>
-                        curriculo
-                    </a>        
-
+                        Desenvolvo projetos Web focada em garantir usabilidade, acessibilidade, performance, SEO, cross browser, entregando a interface sempre o mais próximo possível do guide da marca, garantindo qualidade técnica e boa experiencia para o usuário final.            
+                    </p>                    
                 </div>
             </div>
             <!-- fim inicio conteudo -->
         </div>
         
-        <div class="single-page pagina-projetos display-flex flex-align " id="ancora2">
-            <div class="display-flex justify-content flex-align position-relative wrap-content">
-                <p>
-                    <ul class="habilidades display-flex flex-column justify-content flex-align position-relative wrap-content">
-                            Habilidades<br><br>
-                            HTML 5<br>
-                            Responsive Design<br>
-                            Java Script<br>
-                            React<br>
-                            Cross Browser<br>
-                            Git
-                    </ul> 
-                </p>
+        <div class="single-page" id="habilidades">
+            
+            <div class="container-page">              
+                <h2 class="page-titulo">Habilidades</h2>  
+                <ul class="habilidades">                    
+                    <li>
+                        <span class="material-symbols-outlined habilidades-linguagem">
+                        html
+                        </span>
+                        <p>HTML 5</p>
+                        <div class="bar-progress"><span style="left: 50%;">50%</span></div>
+                        <p>Acessibilidade</p>
+                        <div class="bar-progress"><span style="left: 40%;">40%</span></div>
+                        <p>SEO</p>
+                        <div class="bar-progress"><span  style="left: 30%;">30%</span></div>
+
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined habilidades-linguagem">
+                        css
+                        </span>
+                        <p>Responsive Design</p>
+                        <div class="bar-progress"><span style="left: 20%;">20%</span></div>
+                        <p>Bootstrap</p>
+                        <div class="bar-progress"><span style="left: 40%;">40%</span></div>
+                        <p>Flexbox</p>
+                        <div class="bar-progress"><span style="left: 30%;">35%</span></div>
+                        <p>Mobile First</p>
+                        <div class="bar-progress"><span style="left: 75%;">75%</span></div>
+                    </li>
+
+   
+                    <li>
+                        <span class="material-symbols-outlined habilidades-linguagem">
+                        javascript
+                        </span>
+                        <p>React</p>
+                        <div class="bar-progress"><span style="left: 30%;">30%</span></div>
+                        <p>Jquery</p>
+                        <div class="bar-progress"><span style="left: 50%;">50%</span></div>
+                    </li>
+
+                    <li>
+                        <span class="material-symbols-outlined habilidades-linguagem">
+                        terminal
+                        </span>
+                        <p>Versionamento GIT</p>
+                        <div class="bar-progress"><span style="left: 30%;">35%</span></div>
+                        <p>Gitflow</p>
+                        <div class="bar-progress"><span style="left: 10%;">10%</span></div>
+                        
+                    </li>
+                </ul> 
+               
             </div>
         </div>
-        <div class="single-page pagina-contato display-flex flex-align " id="ancora3">
-            <div class="display-flex justify-content flex-align position-relative wrap-content">
+        <div class="single-page" id="contato">
+            <div class="container-page">
+                <h2 class="page-titulo">Contato</h2>  
                 <div class="conteudo-contato">
-                    <p>
-                        Contato <br>
-                        What is Lorem Ipsum?<br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <p> 
+                        Linkedin:
+                        <a href="https://www.linkedin.com/in/andreza-cristina-/" title="Linkedin" target="_blank">
+                            https://www.linkedin.com/in/andreza-cristina-/
+                        </a>
                     </p>
-                    <a href="https://www.linkedin.com/in/andreza-cristina-/">
-                        linkedin
-                    </a> <br>
-                    <a href="#"><E-mail>andrezadesenvolvedoraweb@gmail.com</E-mail></a>
+                    <p>
+                        Email:
+                        <a href="mailto:andrezadesenvolvedoraweb@gmail.com" title="Email">andrezadesenvolvedoraweb@gmail.com</a>
+                    </p>
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/AndrezaCri/" title="GitHub" target="_blank">https://github.com/AndrezaCri/</a>
+                    </p>
+                    <p>
+                        Currículo:
+                        <a href="assets/curriculo.pdf" title="Currículo" target="_blank">CV</a>
+                    </p>
                 </div>    
             </div>
         </div>
