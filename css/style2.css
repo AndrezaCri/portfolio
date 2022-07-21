@@ -198,24 +198,103 @@ ul a:hover {
     background-color: rgba(44,48,46,0.2);
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
 
+html {
+    scroll-behavior: smooth;
+ }
+ 
+ .header-mobile{
+     display: none;
+     color: #fff;
+ }
+ 
+ .material-symbols-outlined{
+     font-size: 40px;
+ }
+ 
+ @media (max-width: 1024px){
+     .header{
+         background: rgba(198,151,75,1) 1%;
+     }
+ 
+     .header-nav{
+         display: none;
+     }
+     
+     .header-mobile{
+        display: block;
+        float: right;
+        font-size: 90px;
+    }
+ 
+     .logo {
+        font-family: 'Ms Madi', cursive;
+        float: left;
+     }
+ 
+     .logo-item {
+        color: #000;
+        font-size: 40px;
+        text-decoration: none;
+     }
+ 
+     .material-symbols-outlined{
+        font-size: 90px;
+     }
+ 
+     .single-page{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 94px;
+        text-align: center;
+        background: rgba(198,151,75,1) 1%;
 
+     }
+ 
+     .display-flex{
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+    }
+    
+     .foto{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+     }
+     
+     .conteudo{
+         margin: 0;
+         padding: 0;
+         display: inline-block;
+         width: 100%;
+     }
+ 
+     .subtitulo-habilidades {
+        margin-top: 40px;
+        font-size: 55px;
+        text-align: center;
+        color: #000;
+        margin: 0;
+        padding: 0;
+     }
+ 
+     .conteudo p {
+        font-size: 25px;
+        display: flex;
+        width: 100%;
+        color: #000;
+        margin-top: 204px;
+     }
 
-    /*
-    display: inline-block;
-    border: 1px solid #000;
-    /* width: 100%; */
-    /* right: 100%; 
-    vertical-align: middle;
-    margin: 10px 15px;
-    color: yellow;
-    padding-bottom: 50px;
-    line-height: initial;
-    font-size: 20px;*/
+     .subtitulo {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+ 
+ } 
