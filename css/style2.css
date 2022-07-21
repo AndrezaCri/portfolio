@@ -56,6 +56,7 @@ ul a{
 ul a:hover {
     color: #000;
     width: auto;
+
 }
 
 .foto  {
@@ -257,23 +258,23 @@ html {
         margin: 0;
         display: inline-block;
         width: 100%;
-        padding: 0;
     }
     
      .foto{
         width: 200px;
         height: 200px;
         margin: 0;
-        padding: 0;
         display: inline-block;
+        position: unset;
+
      }
      
      .conteudo{
-         margin: 0;
-         padding: 0;
-         display: inline-block;
-         width: 100%;
-     }
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+    }
  
      .subtitulo-habilidades {
         margin-top: 40px;
@@ -282,19 +283,30 @@ html {
         color: #000;
         margin: 0;
         padding: 0;
-     }
- 
-     .conteudo p {
-        font-size: 25px;
-        display: flex;
-        width: 100%;
-        color: #000;
-        margin-top: 204px;
-     }
 
-     .subtitulo {
-        margin-top: 10px;
-        font-size: 28px;
     }
+ 
+    .conteudo p {
+       font-size: 25px;
+       display: flex;
+       width: 100%;
+       color: #000;
+    }
+
+    .subtitulo {
+       margin-top: 10px;
+       font-size: 28px;
+   }
+      
+   .habilidades-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 76%;   
+   }
+     
  
  } 
