@@ -80,6 +80,7 @@ body{
 }
 .header-nav-mobile{
     display: none;
+    
 }
 .logo{
     font-family: 'Ms Madi', cursive;
@@ -247,15 +248,151 @@ ul a:hover {
 .conteudo-contato p a{
     color: #1a110e;
 }
+.contato-mobile{
+    display: none;
+}
 @media (max-width: 1024px){
     .header,
     body{
-        background-color: rgba(198,151,75,1);
+        background: rgba(198,151,75,1);
     }
     .header-nav{
         display: none;
     }
+    .header-nav-mobile .material-symbols-outlined{
+        font-size: 52px;
+    }
     .header-nav-mobile{
+        display: inline-block;
+        color: #000;
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .logo-item{
+        color: #000;
+    }
+    .single-page{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 94px;
+        text-align: center;
+        display: flex;
+    }
+    .foto{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: auto;
+
+    }
+    .conteudo .pagina-inicial{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: right;
+        flex-wrap: wrap;
+        gap: 18px;
+        max-width: 76%;
+        font-size: 40px;
+    }
+    .container-page {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo{
+        width: 80%;
+        position: initial;
+        left: 0;
+        margin: 0;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .conteudo-mobile{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .conteudo{
+        font-family: 'Lato', sans-serif;
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-titulo {
+        font-size: 44px;
+        position: relative;
+        margin-top: 0;
+        left: 0;
+        color: #000;
+        width: 60%;
+    }
+    .habilidades{
+        margin: 24px;
+        width: 80%;
+
+    }
+    .conteudo-contato-mobile{
+        display: none;
+    }
+
+}
+@media (max-width: 500px){
+    .habilidades {
+        flex-direction: column;
+        margin: 25px;
+        width: 80%;
+    }
+    .habilidades li{
+        margin: 0 7px 24px;
+
+    }
+    .conteudo-contato{
+    margin: 24px;
+    display: inline-block;
+    padding: 24px;
+    width: 100%;
+    }
+    .conteudo-contato-mobile{
+        margin: 24px;
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .icones{
+        display: flex;
+        gap: 25px;
+    }    
+    .links1, .links2 {
+        height: 52px;
+        width: 52px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    img {
+        max-width: 50%;
         display: block;
+    }
+    .conteudo-contato{
+        display: none;
+    }
+    .conteudo-contato-mobile p{
+        font-size: 30px;
+        display: inline;
     }
 }
