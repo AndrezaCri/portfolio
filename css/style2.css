@@ -248,13 +248,17 @@ ul a:hover {
 .conteudo-contato p a{
     color: #1a110e;
 }
-.contato-mobile{
+.conteudo-contato-mobile{
     display: none;
 }
 @media (max-width: 1024px){
     .header,
     body{
         background: rgba(198,151,75,1);
+    }
+    .header{
+        margin: 0;
+        padding: 0;
     }
     .header-nav{
         display: none;
@@ -322,6 +326,7 @@ ul a:hover {
     .conteudo-mobile{
         flex-direction: column;
         margin-left: 0;
+        margin-bottom: auto;
     }
     .conteudo{
         font-family: 'Lato', sans-serif;
@@ -368,15 +373,18 @@ ul a:hover {
     }
     .conteudo-contato-mobile{
         margin: 24px;
-        display: inline-block;
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        flex-direction: column;
     }
     .icones{
-        display: flex;
         gap: 25px;
-    }    
+        margin: 35px 0;
+        padding: 0;
+    }
+   
     .links1, .links2 {
         height: 52px;
         width: 52px;
@@ -384,9 +392,8 @@ ul a:hover {
         background-position: center;
         background-repeat: no-repeat;
     }
-    img {
+    .conteudo-contato-mobile img {
         max-width: 50%;
-        display: block;
     }
     .conteudo-contato{
         display: none;
@@ -394,5 +401,41 @@ ul a:hover {
     .conteudo-contato-mobile p{
         font-size: 30px;
         display: inline;
+    }
+    .conteudo-contato-mobile img {
+        max-width: 50%;
+    }
+    .conteudo-contato-mobile{
+        margin: 0;
+        width: 49%;
+    }
+    .single-page .container-page .page-titulo h2{
+    margin-bottom: auto;
+    }
+}
+@media (max-width: 950px){
+    .single-page {
+        display: flex;
+        justify-content: center;
+    }
+    .habilidades{
+        margin: 0;
+        
+    }
+}
+@media (max-width: 320px){
+    .header{
+        margin: 0;
+        padding: 0;
+    }
+    .conteudo-contato-mobile img {
+        max-width: 50%;
+    }
+    .conteudo-contato-mobile{
+        margin: 0;
+        width: 49%;
+    }
+    .container-page{
+    margin-bottom: auto;
     }
 }
