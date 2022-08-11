@@ -482,10 +482,10 @@ ul a:hover {
     .container-page{
     margin-bottom: auto;
     }
-    .header-nav-mobile .material-symbols-outlined {
+    .header-nav-mobile .material-symbols-outlined{
         margin-left: 0;
     }
-    .icones-curriculo .material-symbols-outlined img {
+    .icones-curriculo .material-symbols-outlined img{
         font-size: 60%;
     }
 }
