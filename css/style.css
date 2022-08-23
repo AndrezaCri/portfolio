@@ -252,6 +252,10 @@ ul a:hover {
 .conteudo-contato-mobile {
     display: none;
 }
+.header-nav-list.mobile{
+    display: none;
+
+}
 @media (max-width: 1024px){
     .header,
     body{
@@ -382,6 +386,14 @@ ul a:hover {
     }
     .icones-curriculo .material-symbols-outlined img {
         font-size: 60%;
+    }
+    .header-nav-list.desktop{
+        display: none;
+
+    }
+    .header-nav-list.mobile{
+        display: block;
+
     }
 
 }

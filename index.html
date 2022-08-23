@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Portfolio</title>
+        <title>Andreza-Desenvolvedora Web</title>
         <meta charset="utf-8">
         <meta name="description" content="Desenvolvimento Frontend focado em acessibilidade, usabilidade, perfomance, metricas e performance"/>
         <meta name="keywords" content="criação de sites, criação de sites,
@@ -15,7 +15,7 @@
         
     <body>
         <header class="header">
-
+            
             <h1 class="logo">
                 <a class="logo-item" href="#inicio">&lt;Andreza&gt; <span>&lt;/Cristina&gt;</span></a>
             </h1>
@@ -23,10 +23,15 @@
                 <span class="material-symbols-outlined" onclick="fecharMenu()">
                     close
                 </span>
-                <ul class="header-nav-list">
+                <ul class="header-nav-list desktop">
                     <li class="header-nav-list-item"><a href="#inicio">Início</a></li>
                     <li class="header-nav-list-item"><a href="#habilidades">Habilidades</a></li>
                     <li class="header-nav-list-item"><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="header-nav-list mobile">
+                    <li class="header-nav-list-item"><a href="javascript:void(0)" onclick="ancora('inicio')">Início</a></li>
+                    <li class="header-nav-list-item"><a href="javascript:void(0)" onclick="ancora('habilidades')">Habilidades</a></li>
+                    <li class="header-nav-list-item"><a href="javascript:void(0)" onclick="ancora('contato')">Contato</a></li>
                 </ul>
             </nav>
             <nav class="header-nav-mobile" >
@@ -126,10 +131,6 @@
                         GitHub:
                         <a href="https://github.com/AndrezaCri/" title="GitHub" target="_blank">https://github.com/AndrezaCri/</a>
                     </p>
-                    <p>
-                        Currículo:
-                        <a href="assets/curriculo.pdf" title="Currículo" target="_blank">CV</a>
-                    </p>
                 </div>  
                 <div class="conteudo-contato-mobile">
                     <a class="icones" href="https://www.linkedin.com/in/andreza-cristina-/" target="_blank">
@@ -138,18 +139,12 @@
                         <a class="icones" href="https://github.com/AndrezaCri/" target="_blank">
                         <img src="assets/github-logo.svg" alt="github-icon"/>
                     </a>
-                    <a class="icones-curriculo" href="assets/curriculo.pdf" target="_blank">
-                        <span class="material-symbols-outlined">
-                            description
-                        </span>
-                    </a>
                     <br>
                 </div>    
             </div>
               
         </div>
-        <script src="script.min.js"></script>
-
+        <script src="./js/script.js"></script>
     </body>
 
 
